@@ -1,6 +1,7 @@
 package com.lodenrogue.poker.game;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Deck {
@@ -39,6 +40,11 @@ public class Deck {
 			return userDeck.remove(0);
 		}
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		return Arrays.toString(userDeck.toArray());
 	}
 
 }
